@@ -30,7 +30,11 @@ function Hero() {
                 position={isMobile ? [0, -1.5, 0] : [1.3, -1, 0]}
                 />
             </Float>
-            <OrbitControls /> {/* This makes the 3d model draggable and rotatable by the user, allowing them to explore the model from different angles and perspectives. */}
+
+            {/* Disable zoom to allow standard page scrolling */}
+            <OrbitControls enableZoom={false} enablePan={false} /> 
+            {/* This makes the 3d model draggable and rotatable by the user, allowing them to explore the model from different angles and perspectives. */}
+
             <Rig />
           </Suspense>
         </Canvas>
