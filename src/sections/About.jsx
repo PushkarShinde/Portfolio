@@ -1,17 +1,15 @@
-import Card from '../components/Card'
-import { useRef } from 'react';
 import { Globe } from '../components/Globe';
 import CopyEmailButton from '../components/CopyEmailButton';
 import { Frameworks } from '../components/Frameworks';
+import SocialConstellation from '../components/SocialConstellation';
 
 function About() {
-  const grid2Container = useRef();
   return (
     <section className='section-spacing c-space'>
       <h2 className='text-heading'>About Me</h2>
       <div className='grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[minmax(10rem,auto)] mt-12'>
         {/* Grid 1 */}
-        <div className='flex items-end grid-default-color grid-1'>
+        <div className='flex items-end grid-cinematic-bg grid-1'>
           <img
             src="/assets/coding-pov.png"
             alt="Profile"
@@ -27,68 +25,16 @@ function About() {
               </span>
             </p>
           </div>
-          <div className='absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo' />
+          <div className='absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-[#06060e]' />
         </div>
 
-        {/* Grid 2 - Need to edit this one */}
-        <div className='grid-default-color grid-2'>
-          <div
-            ref={grid2Container}
-            className='flex items-center justify-center h-full w-full'
-          >
-            <p className='flex items-end text-5xl text-gray-500'>
-              Development is a craft.
-            </p>
-            <Card
-              style={{ rotate: "75deg", top: "30%", left: "30%" }}
-              text="System Design"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-30deg", top: "60%", left: "45%" }}
-              text="Fast APIs"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-45deg", bottom: "35%", left: "0%" }}
-              text="Spring Boot"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "20deg", top: "10%", left: "30%" }}
-              image="assets/logos/docker.svg"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "20deg", top: "10%", left: "70%" }}
-              image="assets/logos/python.svg"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "30deg", top: "65%", left: "80%" }}
-              image="assets/logos/c.png"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "70%", left: "25%" }}
-              image="assets/logos/cplusplus.svg"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/java.svg"
-              containerRef={grid2Container}
-            />
-            <Card
-              style={{ rotate: "-45deg", top: "30%", left: "80%" }}
-              image="assets/logos/javascript.svg"
-              containerRef={grid2Container}
-            />
-          </div>
+        {/* Grid 2 — Profile portrait with social presence constellation */}
+        <div className='grid-constellation-bg grid-2'>
+          <SocialConstellation />
         </div>
 
         {/* Grid 3 */}
-        <div className='grid-black-color grid-3'>
+        <div className='grid-constellation-bg grid-3'>
           <div className='z-10 w-[50%]'>
             <p className='headtext'>Time Zone</p>
             <p className='subtext'>
@@ -103,17 +49,17 @@ function About() {
         </div>
 
         {/* Grid 4 */}
-        <div className='grid-special-color grid-4'>
+        <div className='grid-cta-bg grid-4'>
           <div className="flex flex-col items-center justify-center gap-4 size-full">
             <p className="text-center headtext">
-              Would you like to start a project together?
+              Hire Me?
             </p>
             <CopyEmailButton />
           </div>
         </div>
 
         {/* Grid 5 */}
-        <div className='grid-default-color grid-5'>
+        <div className='grid-starfield-bg grid-5'>
           <div className="z-10 w-[50%]">
             <p className="headText">Tech Stack</p>
             <p className="subtext">
