@@ -30,7 +30,7 @@ function About() {
           <div className='absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo' />
         </div>
 
-        {/* Grid 2 */}
+        {/* Grid 2 - Need to edit this one */}
         <div className='grid-default-color grid-2'>
           <div
             ref={grid2Container}
