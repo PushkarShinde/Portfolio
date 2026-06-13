@@ -74,7 +74,7 @@ const ProjectDetails = ({
           aria-label="Close modal"
           className="absolute z-20 flex items-center justify-center transition-all duration-200 rounded-full cursor-pointer top-4 right-4 size-10 bg-black/40 backdrop-blur-sm border border-white/10 hover:bg-white/15 hover:border-white/25 hover:scale-110 active:scale-95"
         >
-          <img src="/assets/close.svg" className="size-4 invert brightness-200" alt="Close" />
+          <img src="/assets/white-close.jpg" className="size-4 invert brightness-200" alt="Close" />
         </button>
 
         {/* Project hero image */}

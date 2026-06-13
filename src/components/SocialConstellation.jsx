@@ -45,7 +45,7 @@ const SOCIAL_LINKS = [
   {
     name: "GitHub",
     icon: "/assets/socials/github.png",
-    url: "https://github.com/PushkarShinde", // ← Replace: https://github.com/YourUsername
+    url: "https://github.com/PushkarShinde",
     hoverColor: "#6e40c9",
     floatOffset: 8,
     floatDuration: 6,
@@ -54,8 +54,7 @@ const SOCIAL_LINKS = [
   {
     name: "LinkedIn",
     icon: "/assets/socials/linkedIn.svg",
-    url: "https://www.linkedin.com/in/pushkar-shinde-636973221/", // ← Replace: https://linkedin.com/in/YourUsername
-    hoverColor: "#0A66C2",
+    url: "https://www.linkedin.com/in/pushkar-shinde-636973221/", 
     floatOffset: 10,
     floatDuration: 5.4,
     floatDelay: 0.8,
@@ -63,7 +62,7 @@ const SOCIAL_LINKS = [
   {
     name: "LeetCode",
     icon: "/assets/socials/leetcode.png",
-    url: "https://leetcode.com/pushkar_shinde/", // ← Replace: https://leetcode.com/u/YourUsername
+    url: "https://leetcode.com/pushkar_shinde/", 
     hoverColor: "#FFA116",
     floatOffset: 7,
     floatDuration: 5.8,
@@ -72,7 +71,7 @@ const SOCIAL_LINKS = [
   {
     name: "Codeforces",
     icon: "/assets/socials/codeforces.png",
-    url: "https://codeforces.com/profile/PushkarShinde", // ← Replace: https://codeforces.com/profile/YourUsername
+    url: "https://codeforces.com/profile/PushkarShinde",
     hoverColor: "#1890FF",
     floatOffset: 9,
     floatDuration: 6.4,
@@ -81,7 +80,7 @@ const SOCIAL_LINKS = [
   {
     name: "Instagram",
     icon: "/assets/socials/instagram.svg",
-    url: "https://instagram.com/pushkarshinde__", // ← Replace: https://instagram.com/YourUsername
+    url: "https://instagram.com/pushkarshinde__", 
     hoverColor: "#E1306C",
     floatOffset: 8,
     floatDuration: 5.2,
@@ -90,7 +89,7 @@ const SOCIAL_LINKS = [
   {
     name: "X",
     icon: "/assets/socials/x.png",
-    url: "https://x.com/PushkarShinde16", // ← Replace: https://x.com/YourUsername
+    url: "https://x.com/PushkarShinde16",
     hoverColor: "#1DA1F2",
     floatOffset: 10,
     floatDuration: 4.8,
@@ -99,7 +98,7 @@ const SOCIAL_LINKS = [
   {
     name: "Spotify",
     icon: "/assets/socials/spotify.png",
-    url: "#", // ← Replace: https://open.spotify.com/user/YourUsername
+    url: "https://open.spotify.com/playlist/62VWNYGAoeIO7O4Mkk2tJx?si=8rxIzVKaQi-4SJ0ifVS4fw",
     hoverColor: "#1DB954",
     floatOffset: 7,
     floatDuration: 5.6,

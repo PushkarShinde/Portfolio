@@ -5,7 +5,7 @@ import SocialConstellation from '../components/SocialConstellation';
 
 function About() {
   return (
-    <section className='section-spacing c-space'>
+    <section id="about" className='section-spacing c-space'>
       <h2 className='text-heading'>About Me</h2>
       <div className='grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[minmax(10rem,auto)] mt-12'>
         {/* Grid 1 */}
@@ -61,7 +61,7 @@ function About() {
         {/* Grid 5 */}
         <div className='grid-starfield-bg grid-5'>
           <div className="z-10 w-[50%]">
-            <p className="headText">Tech Stack</p>
+            <p className="headtext">Tech Stack</p>
             <p className="subtext">
               <span className="text-gray-400 font-medium">I specialize in a variety of languages, frameworks, and tools that
               allow me to build robust and scalable applications</span>.

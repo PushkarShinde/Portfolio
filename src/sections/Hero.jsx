@@ -1,8 +1,8 @@
-import HeroText from '../components/HeroText'
+import HeroText from '../components/HeroText';
 import ParallaxBackground from '../components/ParallaxBackground';
 import { Canvas } from '@react-three/fiber';
 import { Astronaut } from '../components/Astronaut';
-import { OrbitControls, Float } from '@react-three/drei';
+import { Float } from '@react-three/drei';
 import { useMediaQuery } from 'react-responsive';
 import { useFrame } from '@react-three/fiber';
 import { easing } from 'maath';
@@ -13,6 +13,7 @@ function Hero() {
   const isMobile = useMediaQuery({ maxWidth: 850 }); // Adjust the breakpoint as needed
   return (
     <section
+      id="home"
       className="flex items-start justify-center md:item-start md:justify-start min-h-screen  c-space"
     >
       <HeroText />
@@ -28,12 +29,8 @@ function Hero() {
               <Astronaut 
                 scale={isMobile ? 0.23 : 0.3}
                 position={isMobile ? [0, -1.5, 0] : [1.3, -1, 0]}
-                />
+              />
             </Float>
-
-            {/* Disable zoom to allow standard page scrolling */}
-            <OrbitControls enableZoom={false} enablePan={false} /> 
-            {/* This makes the 3d model draggable and rotatable by the user, allowing them to explore the model from different angles and perspectives. */}
 
             <Rig />
           </Suspense>
