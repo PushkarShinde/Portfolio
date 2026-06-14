@@ -93,7 +93,7 @@ function HeroText() {
             transition={{ delay: 1.8 }}
             className="text-4xl font-black text-neutral-300"
           >
-            Software Applications
+            Software Solutions
           </motion.p>
         </div>
       </div>

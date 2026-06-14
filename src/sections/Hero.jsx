@@ -8,6 +8,7 @@ import { useFrame } from '@react-three/fiber';
 import { easing } from 'maath';
 import { Suspense } from 'react';
 import Loader from '../components/Loader';
+import ScrollIndicator from '../components/ScrollIndicator';
 
 function Hero() {
   const isMobile = useMediaQuery({ maxWidth: 850 }); // Adjust the breakpoint as needed
@@ -36,6 +37,7 @@ function Hero() {
           </Suspense>
         </Canvas>
       </figure>
+      <ScrollIndicator />
     </section>
   )
 };

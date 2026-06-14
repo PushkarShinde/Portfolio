@@ -96,6 +96,44 @@ body {
   @apply relative px-1 py-4 text-sm text-center rounded-full font-extralight bg-primary w-[12rem] cursor-pointer overflow-hidden;
 }
 
+/* ── Scroll Down Indicator ─────────────────────────────────────────── */
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%      { transform: translateX(-50%) translateY(6px); }
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  cursor: pointer;
+  animation: scroll-bounce 2s ease-in-out infinite;
+}
+
+.scroll-indicator-arrow {
+  width: 24px;
+  height: 14px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.scroll-indicator:hover .scroll-indicator-arrow {
+  opacity: 0.9;
+}
+
+/* Mobile: smaller */
+@media (max-width: 640px) {
+  .scroll-indicator {
+    bottom: 1.25rem;
+  }
+  .scroll-indicator-arrow {
+    width: 18px;
+    height: 10px;
+  }
+}
+
 /* About Section */
 .grid-1 {
   @apply row-span-2 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
