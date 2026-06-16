@@ -239,10 +239,10 @@ export const mySocials = [
 export const experiences = [
   {
     title: "Sergeant",
-    job: "National Cadet Corps - 3 Maharashtra Engineers Company Nagpur",
+    job: "National Cadet Corps",
     date: "June 2020 - Aug 2023",
     contents: [
-      "Assumed a mentoring role during the CATC (2021), imparting knowledge on firing principles to Junior Division cadets and delivering a live demonstration of map reading.",
+      "Assumed a mentoring role during the CATC (2021) at my unit 3 Maharashtra Engineers Company Nagpur, imparting knowledge on firing principles to Junior Division cadets and delivering a live demonstration of map reading.",
       "Commanded a 10-member team during an army attachment camp at BEG Pune (2022), achieving the accolade of 'The Most Active Team' in recognition of exemplary teamwork and overall performance.",
     ],
   },
