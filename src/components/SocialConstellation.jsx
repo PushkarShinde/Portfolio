@@ -36,7 +36,7 @@ import { motion } from "motion/react";
  *       .social-badge:nth-child(<N>) { top: __%; left: __%; }
  *     Where <N> is the 1-based index of your new badge among its siblings.
  *  4. If you have more than 8 badges total, consider switching the mobile
- *     fallback grid from `grid-cols-3` to `grid-cols-4` in this file.
+ *     fallback grid from `grid-cols-2` to `grid-cols-3` in index.css.
  *
  * ════════════════════════════════════════════════════════════════════════
  */
