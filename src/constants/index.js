@@ -1,232 +1,227 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "AI-Powered Fitness Application",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "A scalable multi-microservices fitness platform leveraging NLP pipelines for personalized workout plans and asynchronous communication.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Architected a scalable multi-microservices platform with a carefully designed stateless authentication flow using JWT and Keycloak to support horizontal scalability.",
+      "Integrated Gemini API to generate personalized workout plans using prompt-engineered NLP pipelines and validated response consistency.",
+      "Implemented asynchronous communication using RabbitMQ to decouple services and reduce request latency during concurrent traffic by around 50%.",
+      "Resolved memory exhaustion by migrating from Docker to Podman, applying per-container memory limits, and enabling lazy initialization to reduce peak RAM usage by nearly 30%.",
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/fitness-app.jpg",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "Java",
+        path: "/assets/logos/java.gif",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
+        name: "Spring Boot",
+        path: "/assets/logos/springboot.svg",
       },
       {
         id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
+        name: "Podman",
+        path: "/assets/logos/podman.svg",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Keycloak",
+        path: "/assets/logos/keycloak.png",
       },
     ],
   },
   {
     id: 2,
-    title: "Authentication & Authorization System",
+    title: "Cause List Converter",
     description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
+      "An AI-powered full-stack pipeline that converts unstructured Indian High Court cause list PDFs into formatted multi-sheet Excel workbooks.",
     subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
+      "Engineered a pipeline extracting 12 structured fields across dynamically detected legal section types with 100% parsing accuracy.",
+      "Designed a chunking algorithm using PDFBox that splits PDFs at legal headers, enabling reliable structured extraction via Gemini 2.5 Flash.",
+      "Resolved Gemini free-tier rate limiting by implementing a thread-safe round-robin API key pool, cutting average processing time by 40%.",
+      "Persisted data to PostgreSQL via Spring Data JPA with Flyway migrations and built a React frontend with live polling and a Recharts dashboard.",
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "/assets/projects/cause-list.png",
     tags: [
       {
         id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
-      },
-      {
-        id: 2,
         name: "React",
         path: "/assets/logos/react.svg",
       },
       {
+        id: 2,
+        name: "TypeScript",
+        path: "/assets/logos/typescript.png",
+      },
+      {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "Java",
+        path: "/assets/logos/java.gif",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Spring Boot",
+        path: "/assets/logos/springboot.svg",
       },
     ],
   },
   {
     id: 3,
-    title: "Blazor Web App",
+    title: "Expense Tracker",
     description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+      "A secure CLI finance manager utilizing advanced cryptography for zero-plaintext binary persistence.",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      "Engineered a secure CLI finance manager supporting CRUD operations, substring search, and monthly records.",
+      "Architected a zero-plaintext binary persistence layer utilizing AES-256-CBC combined with PBKDF2 (100,000 iterations) and dynamic 16-byte salting.",
+      "Resolved critical CLI buffer overflow crashes and plaintext memory leaks by migrating to strictly bounds-checked fgets.",
+      "Engineered custom float validation logic to eliminate 100% of malicious input crashes and reduce unprotected memory footprint to 0 bytes.",
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "/assets/projects/expense-tracker.jpg",
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "C",
+        path: "/assets/logos/C.svg",
       },
       {
         id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
+        name: "AES Encryption",
+        path: "/assets/logos/encryption.png",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "OpenSSL",
+        path: "/assets/logos/openssl.svg",
       },
     ],
   },
-  {
-    id: 4,
-    title: "C++ Game Engine",
-    description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
-    subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/game-engine.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
-      },
-      {
-        id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "WordPress Custom Theme",
-    description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
-    subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
-      },
-      {
-        id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "Online Learning Platform",
-    description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-    subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/elearning.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
-      },
-      {
-        id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
+  // {
+  //   id: 4,
+  //   title: "C++ Game Engine",
+  //   description:
+  //     "A lightweight C++ game engine designed for 2D and 3D game development.",
+  //   subDescription: [
+  //     "Built a powerful rendering engine using OpenGL and C++.",
+  //     "Developed a physics engine with collision detection and particle effects.",
+  //     "Implemented a scripting system for easy game customization.",
+  //     "Optimized performance with multi-threading and efficient memory management.",
+  //   ],
+  //   href: "",
+  //   logo: "",
+  //   image: "/assets/projects/game-engine.jpg",
+  //   tags: [
+  //     {
+  //       id: 1,
+  //       name: "C++",
+  //       path: "/assets/logos/cplusplus.svg",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "C#",
+  //       path: "/assets/logos/csharp.svg",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "Git",
+  //       path: "/assets/logos/git.svg",
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "Microsoft",
+  //       path: "/assets/logos/microsoft.svg",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 5,
+  //   title: "WordPress Custom Theme",
+  //   description:
+  //     "A fully customizable WordPress theme optimized for performance and SEO.",
+  //   subDescription: [
+  //     "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
+  //     "Integrated Tailwind CSS for modern styling and UI enhancements.",
+  //     "Optimized SEO and page speed using Vite.js for fast builds.",
+  //     "Implemented custom widgets and plugin compatibility for extended functionality.",
+  //   ],
+  //   href: "",
+  //   logo: "",
+  //   image: "/assets/projects/wordpress-theme.jpg",
+  //   tags: [
+  //     {
+  //       id: 1,
+  //       name: "WordPress",
+  //       path: "/assets/logos/wordpress.svg",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "HTML5",
+  //       path: "/assets/logos/html5.svg",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "CSS3",
+  //       path: "/assets/logos/css3.svg",
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "Vite.js",
+  //       path: "/assets/logos/vitejs.svg",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 6,
+  //   title: "Online Learning Platform",
+  //   description:
+  //     "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
+  //   subDescription: [
+  //     "Built using Blazor WebAssembly for a seamless SPA experience.",
+  //     "Implemented video streaming with Azure Media Services.",
+  //     "Added a quiz system with dynamic question generation and real-time grading.",
+  //     "Integrated Stripe API for secure payment processing.",
+  //   ],
+  //   href: "",
+  //   logo: "",
+  //   image: "/assets/projects/elearning.jpg",
+  //   tags: [
+  //     {
+  //       id: 1,
+  //       name: "Blazor",
+  //       path: "/assets/logos/blazor.svg",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "Azure",
+  //       path: "/assets/logos/azure.svg",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "Stripe",
+  //       path: "/assets/logos/stripe.svg",
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "TailwindCSS",
+  //       path: "/assets/logos/tailwindcss.svg",
+  //     },
+  //   ],
+  // },
 ];
 
 export const mySocials = [
   {
     name: "X",
-    href: "",
+    href: "https://x.com/PushkarShinde16",
     icon: "/assets/socials/x.png",
   },
   {
@@ -243,38 +238,32 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
+    title: "Sergeant",
+    job: "National Cadet Corps - 3 Maharashtra Engineers Company Nagpur",
+    date: "June 2020 - Aug 2023",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "Assumed a mentoring role during the CATC (2021), imparting knowledge on firing principles to Junior Division cadets and delivering a live demonstration of map reading.",
+      "Commanded a 10-member team during an army attachment camp at BEG Pune (2022), achieving the accolade of 'The Most Active Team' in recognition of exemplary teamwork and overall performance.",
     ],
   },
   {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
-    date: "2023-2024",
+    title: "CS Student",
+    job: "NIT Allahabad",
+    date: "Aug 2024 - June 2027",
     contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
+      "Pursuing a Master of Computer Applications with a current CPI of 8.15.",
+      "Acting as a lead at the Application Club, mentoring junior students and guiding them through skill development and technical challenges.",
     ],
   },
-  {
-    title: "Freelance Developer",
-    job: "Self-Employed",
-    date: "2025-Present",
-    contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
-    ],
-  },
+  // {
+  //   title: "Freelance Developer",
+  //   job: "Self-Employed",
+  //   date: "2025-Present",
+  //   contents: [
+  //     "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
+  //     "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+  //   ],
+  // },
 ];
 export const reviews = [
   {
