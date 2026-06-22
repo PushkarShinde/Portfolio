@@ -86,7 +86,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/expense-tracker.jpg",
+    image: "/assets/projects/expense-tracker.png",
     tags: [
       {
         id: 1,

@@ -14,6 +14,7 @@ export function Frameworks() {
     "sqlite",
     "go",
     "docker",
+    "C"
   ];
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">
