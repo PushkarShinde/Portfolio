@@ -247,12 +247,12 @@ export const experiences = [
     ],
   },
   {
-    title: "CS Student",
-    job: "NIT Allahabad",
-    date: "Aug 2024 - June 2027",
+    title: "Lead",
+    job: "Application Club MNNIT",
+    date: "Oct 2025 - Present",
     contents: [
-      "Pursuing a Master of Computer Applications with a current CPI of 8.15.",
-      "Acting as a lead at the Application Club, mentoring junior students and guiding them through skill development and technical challenges.",
+      "Guided junior students through their academic skill-building journey.",
+      "Executed technical events, including organizing The Daemon, an interactive Linux treasure hunt game designed to gamify command-line education.",
     ],
   },
   // {
