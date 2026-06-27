@@ -1,9 +1,13 @@
+import { useState } from 'react';
+import { AnimatePresence } from 'motion/react';
 import { Globe } from '../components/Globe';
-import CopyEmailButton from '../components/CopyEmailButton';
 import { Frameworks } from '../components/Frameworks';
 import SocialConstellation from '../components/SocialConstellation';
+import ResumeModal from '../components/ResumeModal';
 
 function About() {
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
+
   return (
     <section id="about" className='section-spacing c-space'>
       <h2 className='text-heading'>About Me</h2>
@@ -54,7 +58,28 @@ function About() {
             <p className="text-center headtext">
               Hire Me?
             </p>
-            <CopyEmailButton />
+            <button
+              onClick={() => setIsResumeOpen(true)}
+              className="relative z-10 px-1 py-4 text-sm text-center rounded-full font-extralight bg-primary w-[12rem] cursor-pointer overflow-hidden flex items-center justify-center gap-2 hover:-translate-y-1 transition-transform duration-200"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="size-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+                <polyline points="10 9 9 9 8 9" />
+              </svg>
+              View Resume
+            </button>
           </div>
         </div>
 
@@ -72,6 +97,13 @@ function About() {
           </div>
         </div>
       </div>
+
+      {/* Resume Modal — same AnimatePresence pattern as Projects */}
+      <AnimatePresence>
+        {isResumeOpen && (
+          <ResumeModal closeModal={() => setIsResumeOpen(false)} />
+        )}
+      </AnimatePresence>
     </section>
   )
 }
